@@ -1,0 +1,26 @@
+Generate ssh key
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+initial local repository as a git repository
+git init
+
+stage
+git add .
+
+ssh-keygen -t ed25519 -C "github gmail"
+
+copy ssh key
+clip < ~/.ssh/id_ed25519.pub
+
+set username and email on repo
+git config --global user.name "Username"
+git config --global user.email "demo@gmail.com"
+
+
+show hidden file
+ls -la
+
+to remove local ssh key from root directory
+cd .ssh
+rm -rt .ssh
+than remove the folder
