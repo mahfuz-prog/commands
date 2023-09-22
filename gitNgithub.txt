@@ -33,5 +33,42 @@ git remote add origin git@github.com:mahfuz-prog/gitNgithub.git
 git push -u origin main
 
 to clone a git repo from github, copy ssh code
+---------------------------------------------------
+it create a folder then clone all files inside it
 git clone git@github.com:mahfuz-prog/gitNgithub.git
+---------------------------------------------------
+to clone all files in working directory
+git clone git@github.com:mahfuz-prog/gitNgithub.git .
 
+to see changes
+git diff
+git diff filename
+
+to see edits in stage 
+git diff --staged filename
+
+to reset all files
+git checkout .
+
+rules
+https://gist.github.com/octocat/9257657
+Create a .gitignore file for your repository.
+touch .gitignore
+
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
