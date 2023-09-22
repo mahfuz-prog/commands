@@ -10,7 +10,7 @@ show hidden file
 ls -la
 
 to remove local ssh key from root directory
-cd .ssh
+key located in .ssh file
 rm -rt .ssh
 than remove the folder
 
@@ -18,14 +18,18 @@ set username and email on repo
 git config --global user.name "Username"
 git config --global user.email "demo@gmail.com"
 
+create a repository on github and copy ssh command from github
 
-create a repository on github and copy ssh command
 initial local repository as a git repository
-
 git init
 
 >stage
 git add .
 
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mahfuz-prog/gitNgithub.git
+git push -u origin main
 
-
+to clone a git repo from github, copy ssh code
+git clone git@github.com:mahfuz-prog/gitNgithub.git
