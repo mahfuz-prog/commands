@@ -90,3 +90,11 @@ doc/*.txt
 
 # ignore all .pdf files in the doc/ directory and any of its subdirectories
 doc/**/*.pdf
+
+
+
+---------------------------------------
+backup 
+git reflog
+git checkout hash
+git branch backup
