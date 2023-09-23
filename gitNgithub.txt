@@ -19,6 +19,7 @@ key located in .ssh file
 rm -r .ssh
 than remove the folder
 
+git config --global core.autocrlf false
 set username and email on repo
 git config --global user.name "Username"
 git config --global user.email "demo@gmail.com"
