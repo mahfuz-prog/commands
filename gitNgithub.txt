@@ -5,14 +5,18 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 ssh-keygen -t ed25519 -C "github gmail"
 
 copy ssh key
-clip < ~/.ssh/id_ed25519.pub		
+clip < ~/.ssh/id_ed25519.pub	
+
+to clone a git repo from github, copy ssh code
+git clone git@github.com:mahfuz-prog/gitNgithub.git
+git clone git@github.com:mahfuz-prog/gitNgithub.git . 		#to clone all files in working directory	
 
 show hidden file
 ls -la		
 
 to remove local ssh key from root directory
 key located in .ssh file
-rm -rt .ssh
+rm -r .ssh
 than remove the folder
 
 set username and email on repo
@@ -46,10 +50,6 @@ git remote -v
 git branch -a 		#all branches local & remote
 
 git clean -df		#remove all untract file
-
-to clone a git repo from github, copy ssh code
-git clone git@github.com:mahfuz-prog/gitNgithub.git
-git clone git@github.com:mahfuz-prog/gitNgithub.git . 		#to clone all files in working directory
 
 to see changes
 git diff
