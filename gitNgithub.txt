@@ -5,10 +5,10 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 ssh-keygen -t ed25519 -C "github gmail"
 
 copy ssh key
-clip < ~/.ssh/id_ed25519.pub
+clip < ~/.ssh/id_ed25519.pub		
 
 show hidden file
-ls -la
+ls -la		
 
 to remove local ssh key from root directory
 key located in .ssh file
@@ -21,18 +21,13 @@ git config --global user.email "demo@gmail.com"
 git config --list
 
 create a repository on github and copy ssh command from github
-
-initial local repository as a git repository
-git init
-
+git init		#initial local repository as a git repository
 git add .		#stage
 git reset filename	#remove file from the staging area
 git reset		#remove everything from staging
 
-git clean -df`		#remove all untract file
-
-git commit -m "first commit" 			#to commit
-git commit --amend -m 'commit title'		#to change commit title, still don't push this with other people
+git commit -m "Initial commit" 			#to commit
+git commit --amend -m 'commit title'		#to change commit title, Not to push this with other people
 git branch -M main
 git remote add origin git@github.com:mahfuz-prog/gitNgithub.git
 git push -u origin main
@@ -45,18 +40,16 @@ git marge branch-name			#first switch main then marge branch-name
 git push -u origin branch-name		#remote
 git branch -d branch-name 		#remove branch from local directory
 git push origin --delete branch-name 	#delete from remote
---------------------------
+
 to see remote repo
 git remote -v
 git branch -a 		#all branches local & remote
 
+git clean -df		#remove all untract file
+
 to clone a git repo from github, copy ssh code
----------------------------------------------------
-it create a folder then clone all files inside it
 git clone git@github.com:mahfuz-prog/gitNgithub.git
----------------------------------------------------
-to clone all files in working directory
-git clone git@github.com:mahfuz-prog/gitNgithub.git .
+git clone git@github.com:mahfuz-prog/gitNgithub.git . 		#to clone all files in working directory
 
 to see changes
 git diff
@@ -68,6 +61,7 @@ git diff --staged filename
 to reset all files
 git checkout .
 
+--------------------------------------------------------------------------------
 rules
 https://gist.github.com/octocat/9257657
 Create a .gitignore file for your repository.
@@ -90,11 +84,9 @@ doc/*.txt
 
 # ignore all .pdf files in the doc/ directory and any of its subdirectories
 doc/**/*.pdf
+----------------------------------------------------------------------------------
 
-
-
----------------------------------------
-backup 
+to recover 
 git reflog
 git checkout hash
 git branch backup
