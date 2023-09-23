@@ -35,6 +35,7 @@ git commit -m "Initial commit" 			#to commit
 git commit --amend -m 'commit title'		#to change commit title, Not to push this with other people
 git branch -M main
 git remote add origin git@github.com:mahfuz-prog/gitNgithub.git
+echo "# afd" >> README.md
 git push -u origin main
 
 Branches
