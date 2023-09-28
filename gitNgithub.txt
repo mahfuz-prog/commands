@@ -42,7 +42,7 @@ Branches
 git branch
 git branch branch-name			#create branch
 git checkout branch-name 		#switch branch
-git marge branch-name			#first switch main then marge branch-name
+git merge branch-name			#first switch main then marge branch-name
 git push -u origin branch-name		#remote
 git branch -d branch-name 		#remove branch from local directory
 git push origin --delete branch-name 	#delete from remote
