@@ -1,7 +1,7 @@
 # Bash commands
-##### [Generate ssh key]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+##### [Generate ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 ```bash
-ssh-keygen -t ed25519 -C "github gmail"
+ssh-keygen -t ed25519 -C "github email"
 ```
 ##### Copy ssh key
 ```bash
@@ -63,7 +63,7 @@ git diff
 git diff filename
 git diff --staged filename		#Show edits in stage 
 ```
-##### [Rules]: https://gist.github.com/octocat/9257657
+##### [Rules](https://gist.github.com/octocat/9257657)
 ```bash
 touch .gitignore			#Create a .gitignore file
 ```
