@@ -50,7 +50,7 @@ git checkout branch-name 		#switch branch
 git branch -m mew-name                  #rename branch
 git merge branch-name			#first switch main then marge branch-name
 git push -u origin branch-name		#push remote
-git branch -d branch-name 		#remove branch from local directory
+git branch -D branch-name 		#remove branch from local directory
 git push origin --delete branch-name 	#delete from remote
 ```
 ##### Remote repository
