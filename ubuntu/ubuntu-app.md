@@ -4,11 +4,22 @@
 ```bash
 ssh-keygen -t ed25519 -C 'comment'	# create keys using cryptography
 
-sudo apt install openssh-server		# install ssh server
+# ~/.ssh
 .ssh dir should have permission 700
 files of .ssh dir should have 600
 
 sudo systemctl restart sshd.service  	# restart services
+
+# multiple ssh config
+~/.ssh/config				# config file loaction
+----------------------------------|
+Host debian			  |	# Host whatever
+    Hostname 34.131.146.239	  |	# if of domain
+    User debian			  |	# username of cloud machine
+    IdentityFile ~/.ssh/id_debian |	# ssh keys file
+----------------------------------|
+ssh debian				# login using ssh
+
 
 # if has passphrase 
 eval $(ssh-agent)			# it cash the key for per session
