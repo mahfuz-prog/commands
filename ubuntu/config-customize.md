@@ -17,6 +17,6 @@ set bell-style none 				# uncomment this line
 
 ##### Open application
 ```bash
-~/.bashrc execute evey time system restart
+# ~/.bashrc execute evey time system restart
 alias subl='"/mnt/c/Program Files/Sublime Text/subl.exe" . -a'
 ```

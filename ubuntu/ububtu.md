@@ -10,6 +10,7 @@ man [command]				# gives all options
 
 ##### Users
 ```bash
+whoami
 sudo useradd username -m -s /usr/bin/bash -g users		# add user
 sudo passwd username						# change password
 adduser username sudo						# add the user sudo group

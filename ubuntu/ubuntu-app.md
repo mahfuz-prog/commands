@@ -2,11 +2,18 @@
 
 ##### ssh
 ```bash
-sudo apt install openssh-server			# install ssh server
+ssh-keygen -t ed25519 -C 'comment'	# create keys using cryptography
+
+sudo apt install openssh-server		# install ssh server
 .ssh dir should have permission 700
 files of .ssh dir should have 600
 
-sudo systemctl restart sshd.service  		# restart services
+sudo systemctl restart sshd.service  	# restart services
+
+# if has passphrase 
+eval $(ssh-agent)			# it cash the key for per session
+ps aux | grep [process_id]		# p_id get from eval, running in bg
+ssh-add ~/.ssh/key_name			# passphrase to agent
 ```
 
 ##### ufw
