@@ -14,3 +14,9 @@ ubuntu2204 config --default-user root 				# root default
 sudo nano /etc/inputrc				# file location
 set bell-style none 				# uncomment this line
 ```
+
+##### Open application
+```bash
+~/.bashrc execute evey time system restart
+alias subl='"/mnt/c/Program Files/Sublime Text/subl.exe" . -a'
+```
