@@ -117,3 +117,23 @@ lastlog -u root					# gives the last login of user
 ```bash
 nano script.sh			# add #!bashdir than command
 ```
+
+##### Service
+```bash
+sudo nano /etc/systemd/system/myservice.service			            # create new service 
+
+---------------------------------------------------------------
+[Unit]
+After=network.target
+
+[Service]
+WorkingDirectory=/home/username/my-scraper
+ExecStart=/home/username/my-scraper/.env/bin/python3 scraper.py
+---------------------------------------------------------------
+
+sudo systemctl daemon-reload                                        # inform systemd about our created daemon
+sudo systemctl start myservice                                      # start service
+sudo systemctl status myservice                                     # see the status
+sudo systemctl restart myservice                                    # restart the service
+sudo systemctl stop myservice                                       # stop service
+```
