@@ -136,4 +136,8 @@ sudo systemctl start myservice                                      # start serv
 sudo systemctl status myservice                                     # see the status
 sudo systemctl restart myservice                                    # restart the service
 sudo systemctl stop myservice                                       # stop service
+
+sudo journalctl -u myservice                                        # tail the log
+sudo journalctl -u myservice -f                                     # tail the log realtime
+sudo tail /var/log/syslog                                           # default log for service
 ```
