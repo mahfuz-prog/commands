@@ -140,4 +140,5 @@ sudo systemctl stop myservice                                       # stop servi
 sudo journalctl -u myservice                                        # tail the log
 sudo journalctl -u myservice -f                                     # tail the log realtime
 sudo tail /var/log/syslog                                           # default log for service
+grep "python3" /var/log/syslog | awk '/May  8/'                     # filter for specific date
 ```
