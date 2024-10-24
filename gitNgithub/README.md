@@ -68,6 +68,12 @@ git diff --staged filename		#Show edits in stage
 ```bash
 touch .gitignore			#Create a .gitignore file
 ```
+
+##### Reverts all uncommitted changes
+```bash
+git reset --hard HEAD
+```
+
 ##### Revert to previous commit
 ```bash
 git log
