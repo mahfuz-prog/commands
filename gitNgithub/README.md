@@ -68,6 +68,13 @@ git diff --staged filename		#Show edits in stage
 ```bash
 touch .gitignore			#Create a .gitignore file
 ```
+##### Revert to previous commit
+```bash
+git log
+git reset --hard [hash]
+git push origin [origin-name] -f
+```
+
 ##### Recovery
 ```bash
 git reflog
