@@ -39,6 +39,7 @@ git branch -M main			#initialize the branch as main
 git remote add origin SSH key
 echo "# afd" >> README.md		#add .md file
 git push -u origin main
+git push -f origin branch   #force the update
 git clean -df				#remove all untract file
 ```
 ##### Branches
