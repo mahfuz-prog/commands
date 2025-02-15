@@ -1,0 +1,11 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"ImportHelper",
+		"Package Control",
+	],
+	"in_process_packages":
+	[
+	],
+}

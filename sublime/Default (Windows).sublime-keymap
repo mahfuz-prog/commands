@@ -1,0 +1,11 @@
+[
+	{ "keys": ["ctrl+shift+up"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+	{ "keys": ["ctrl+shift+down"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+	{ "keys": ["ctrl+up"], "command": "swap_line_up" },
+	{ "keys": ["ctrl+down"], "command": "swap_line_down" },
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+left"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+shift+up"], "command": "fold" },
+	{ "keys": ["ctrl+shift+down"], "command": "unfold" },
+	{ "keys": ["alt+d"], "command": "find_under_expand" }
+]
