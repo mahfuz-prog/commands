@@ -1,9 +1,13 @@
 {
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Default Dark.sublime-theme",
 	"font_size": 15,
 	"color_scheme": "Monokai.sublime-color-scheme",
 	"ignored_packages":
 	[
 		"Vintage",
 	],
+	"index_files": true,
+	"scroll_past_end": true,
+    "translate_tabs_to_spaces": false,
+    "tab_size": 4,
 }
